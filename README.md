@@ -1,3 +1,9 @@
+quick patch to lint jsx files
+
+just replace grunt-contrib-jshint reference with this in your packae.json 
+```"grunt-contrib-jshint": "https://github.com/pgherveou/grunt-contrib-jshint/archive/jsx.tar.gz"```
+
+
 # grunt-contrib-jshint v0.7.2 [![Build Status](https://travis-ci.org/gruntjs/grunt-contrib-jshint.png?branch=master)](https://travis-ci.org/gruntjs/grunt-contrib-jshint)
 
 > Validate files with JSHint.
