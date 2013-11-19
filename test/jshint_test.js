@@ -148,5 +148,24 @@ exports.jshint = {
       test.equal(reporterCallCount, 1, 'Should have called the reporter once.');
       test.done();
     });
+  },
+  goodJsx: function(test) {
+    test.expect(1);
+    var files = [path.join(fixtures, 'good-jsx.jsx')];
+    var options = {};
+    jshint.lint(files, options, function(results, data) {
+      test.ok(results.length === 0, 'Should not have reported any errors');
+      test.done();
+    });
+  },
+
+  badJsx: function(test) {
+    test.expect(1);
+    var files = [path.join(fixtures, 'bad-jsx.jsx')];
+    var options = {};
+    jshint.lint(files, options, function(results, data) {
+      test.ok(results.length === 1, 'Should have reported an error');
+      test.done();
+    });
   }
 };
