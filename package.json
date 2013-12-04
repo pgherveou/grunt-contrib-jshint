@@ -27,7 +27,8 @@
     "test": "grunt test"
   },
   "dependencies": {
-    "jshint": "https://github.com/pgherveou/jshint/archive/jsx.tar.gz"
+    
+    "jshint": "https://github.com/pgherveou/jshint/archive/master.tar.gz"
   },
   "devDependencies": {
     "grunt-contrib-nodeunit": "~0.1.2",
