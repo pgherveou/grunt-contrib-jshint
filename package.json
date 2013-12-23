@@ -28,7 +28,7 @@
   },
   "dependencies": {
     
-    "jshint": "https://github.com/pgherveou/jshint/archive/master.tar.gz"
+    "jshint": "pgherveou/jshint"
   },
   "devDependencies": {
     "grunt-contrib-nodeunit": "~0.1.2",
